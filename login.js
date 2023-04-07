@@ -11,7 +11,7 @@ document.querySelector('#register').addEventListener('click', function() {
             password : userPassword
         }
         console.log(formData)
-    fetch('https://weather-app-back-orpin.vercel.app/signup', {
+    fetch('https://weather-app-back-orpin.vercel.app/users/signup', {
         method : 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ document.querySelector('#connection').addEventListener('click', function(){
     }
     console.log(loginData)
 
-    fetch('https://weather-app-back-orpin.vercel.app/signin',{
+    fetch('https://weather-app-back-orpin.vercel.app/users/signin',{
         method : 'POST',
         headers : {
             'Content-Type' : 'application/json'
